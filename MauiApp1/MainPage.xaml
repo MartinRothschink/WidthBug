@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <Grid ColumnDefinitions="2*, 1*, 3*" RowDefinitions="Auto,*" ColumnSpacing="4" RowSpacing="4">
+
+            <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" >
+                <Grid ColumnDefinitions="72,72,*" ColumnSpacing="4" RowSpacing="4">
+                    <Button Grid.Column="0" Text="Start" Pressed="ButtonStart_Pressed" />
+                    <Button Grid.Column="1" Text="Stop"  Pressed="ButtonStop_Pressed"/>
+                    <Label Grid.Column="2" x:Name="Label" Text="Short text" LineBreakMode="WordWrap" VerticalOptions="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="0" Padding="24">
+                <Rectangle BackgroundColor="Aqua"></Rectangle>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="1" Padding="24">
+                <Rectangle BackgroundColor="Aqua"></Rectangle>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="2" Padding="24">
+                <Rectangle BackgroundColor="Aqua"></Rectangle>
+            </Border>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
